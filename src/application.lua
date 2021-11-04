@@ -15,33 +15,11 @@ function readshit()
 
     end
 end
-homepage1 = [[
 
-<!DOCTYPE HTML>
-<html>
- <head>
-   <meta content="text/html; charset = utf-8">
-   <title> WEATHER STATION</title>
-   <style type ="text/css">
-     html, body {
-       min-height: 100%;
-     }
-     body {
-       font-family: monospace;
-       text-align: center;
-     }
-   </style>
-  <body>
-    <h5>]]
-
-homepage2 = [[</h5>
-  </body>
-</html>
-]]
 
 readshit()
 
-homepage = homepage1 .. reads .. homepage2
+
 
 function runServer()
     s = net.createServer(net.TCP)
