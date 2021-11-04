@@ -7,9 +7,10 @@ local config = require('config')
 
 local module = {}
 pin = 5
-status, temp, humi = dht.read(pin)
+status = dht.read(pin)
 function readshit()
     if( status == dht.OK) then
+      temp, humi = dht.read(pin)
       reads = temp .. "C " .. humi .. "%"
       print(reads)
 
